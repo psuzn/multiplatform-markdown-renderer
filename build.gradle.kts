@@ -32,7 +32,7 @@ allprojects {
 }
 
 subprojects {
-    apply(from = "../detekt.gradle")
+    apply(from = "$rootDir/detekt.gradle")
 
     dependencies {
         "detektPlugins"("io.gitlab.arturbosch.detekt:detekt-formatting:1.21.0")
