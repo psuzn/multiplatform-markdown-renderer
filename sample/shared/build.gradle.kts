@@ -28,10 +28,14 @@ kotlin {
   }
 
   sourceSets {
+
+    val ktoVersion = "2.3.2"
+
     val commonMain by getting {
       dependencies {
         implementation(compose.ui)
         implementation(compose.material)
+        implementation("media.kamel:kamel-image:0.6.0")
         api(project(":multiplatform-markdown-renderer"))
       }
     }
@@ -39,11 +43,14 @@ kotlin {
     val androidMain by getting {
       dependencies {
         api("androidx.appcompat:appcompat:1.6.1")
+        implementation("io.ktor:ktor-client-android:${ktoVersion}")
       }
     }
 
     val iosMain by getting {
-
+      dependencies {
+        implementation("io.ktor:ktor-client-darwin:${ktoVersion}")
+      }
     }
 
     val iosSimulatorArm64Main by getting {
@@ -51,7 +58,9 @@ kotlin {
     }
 
     val desktopMain by getting {
-
+      dependencies {
+        implementation("io.ktor:ktor-client-okhttp:${ktoVersion}")
+      }
     }
   }
 }

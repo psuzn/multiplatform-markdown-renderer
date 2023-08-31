@@ -3,7 +3,7 @@ package com.mikepenz.markdown.sample
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import me.sujanpoudel.playdeals.common.PlayDealsAppAndroid
+import com.mikepenz.markdown.sample.common.SampleMainAndroid
 
 class MainActivity : ComponentActivity() {
 
@@ -11,7 +11,7 @@ class MainActivity : ComponentActivity() {
     super.onCreate(savedInstanceState)
 
     setContent {
-      PlayDealsAppAndroid()
+      SampleMainAndroid()
     }
   }
 }

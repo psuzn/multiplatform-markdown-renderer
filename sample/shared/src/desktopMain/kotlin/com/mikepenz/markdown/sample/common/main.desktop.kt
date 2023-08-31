@@ -1,10 +1,10 @@
-package me.sujanpoudel.playdeals.common
+package com.mikepenz.markdown.sample.common
 
 import androidx.compose.runtime.Composable
+import com.mikepenz.markdown.sample.common.SampleMainView
 
 
 @Composable
 fun MainDesktopView() {
-
   SampleMainView()
 }

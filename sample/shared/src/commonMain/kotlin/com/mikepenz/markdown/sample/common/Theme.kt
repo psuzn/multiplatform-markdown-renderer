@@ -1,4 +1,4 @@
-package me.sujanpoudel.playdeals.common
+package com.mikepenz.markdown.sample.common
 
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material.MaterialTheme
